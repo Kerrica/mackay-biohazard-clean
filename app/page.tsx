@@ -2,64 +2,97 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <main className="min-h-screen bg-[#edf3f3]">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
+          <div className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]">
+            MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
+          </div>
+
+          <nav className="hidden items-center gap-10 md:flex">
+            <a href="#services" className="font-bold text-slate-700 hover:text-slate-900">
+              Services
+            </a>
+            <a href="#locations" className="font-bold text-slate-700 hover:text-slate-900">
+              Locations
+            </a>
+            <a href="#about" className="font-bold text-slate-700 hover:text-slate-900">
+              About
+            </a>
+            <a href="#faq" className="font-bold text-slate-700 hover:text-slate-900">
+              FAQ
+            </a>
+            <a href="#contact" className="font-bold text-slate-700 hover:text-slate-900">
+              Contact
+            </a>
+          </nav>
+
+          <div className="flex items-center gap-5">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="tel:0405450705"
+              className="hidden text-[18px] font-bold text-slate-700 lg:block"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              0405 450 705
+            </a>
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="tel:0405450705"
+              className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Call Now
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      <section className="pb-14 pt-0">
+        <div className="w-full overflow-hidden bg-[#0f2230]">
+          <div className="relative min-h-[720px] w-full">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/hoarded-room-mackay-before.jpg"
+              alt="Severe hoarded room before cleanup in Mackay"
+              fill
+              priority
+              className="object-cover object-center"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <div className="absolute inset-0 bg-[#0f2230]/68" />
+
+            <div className="relative z-10 flex min-h-[720px] items-center">
+              <div className="mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+                <div className="max-w-[680px]">
+                  <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
+                    24/7 Urgent Response Line
+                  </p>
+
+                  <h1 className="max-w-[620px] text-[3.6rem] font-black uppercase leading-[0.92] tracking-tight text-white sm:text-[5.2rem]">
+                    Biohazard &amp; Trauma Cleaning Mackay
+                  </h1>
+
+                  <p className="mt-7 max-w-[620px] text-[1.2rem] leading-9 text-slate-200">
+                    Discreet, controlled remediation for hoarding, squalor, trauma,
+                    biohazard and complex property situations across Mackay and surrounding regions.
+                  </p>
+
+                  <div className="mt-10 flex flex-wrap gap-4">
+                    <a
+                      href="tel:0405450705"
+                      className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
+                    >
+                      Call the Response Line
+                    </a>
+
+                    <a
+                      href="#services"
+                      className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
+                    >
+                      View Services
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
