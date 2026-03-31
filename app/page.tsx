@@ -44,14 +44,16 @@ const supportServices = [
     image: "/storage-declutter-mackay-before.jpg",
     alt: "Storage area before decluttering in Mackay",
   },
-  {
-    title: "Crisis Navigation",
-    description:
-      "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
-    href: "/services",
-    image: "/biohazard-cleaning-technician-mackay-ppe-suit.jpg",
-    alt: "Biohazard technician in PPE in Mackay",
-  },
+ {
+  title: "Crisis Navigation",
+  description:
+    "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
+  href: "/services",
+  image: "/biohazard-cleaning-technician-mackay-ppe-suit.png",
+  alt: "Supportive in-home guidance conversation",
+  imageHeightClassName: "h-72",
+  imageClassName: "object-[center_12%]",
+}
 ];
 
 const locations = [
@@ -71,17 +73,26 @@ function ServiceCard({
   href,
   image,
   alt,
+  imageClassName,
+  imageHeightClassName,
 }: {
   title: string;
   description: string;
   href: string;
   image: string;
   alt: string;
+  imageClassName?: string;
+  imageHeightClassName?: string;
 }) {
   return (
     <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
-      <div className="relative h-56 w-full">
-        <Image src={image} alt={alt} fill className="object-cover object-[center_43%]" />
+      <div className={`relative w-full ${imageHeightClassName ?? "h-56"}`}>
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          className={`object-cover ${imageClassName ?? "object-center"}`}
+        />
       </div>
       <div className="p-8">
         <h3 className="text-[2rem] font-black uppercase leading-none tracking-tight text-slate-900">
