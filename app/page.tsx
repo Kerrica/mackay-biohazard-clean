@@ -49,7 +49,7 @@ const supportServices = [
   description:
     "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
   href: "/services",
-  image: "/biohazard-cleaning-technician-mackay-ppe-suit.png",
+  image: "/storage-declutter-mackay-before.jpg",
   alt: "Supportive in-home guidance conversation",
   imageHeightClassName: "h-72",
   imageClassName: "object-[center_8%]",
