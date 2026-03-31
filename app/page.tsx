@@ -44,7 +44,7 @@ const supportServices = [
     image: "/storage-declutter-mackay-before.jpg",
     alt: "Storage area before decluttering in Mackay",
   },
- {
+{
   title: "Crisis Navigation",
   description:
     "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
@@ -52,7 +52,7 @@ const supportServices = [
   image: "/biohazard-cleaning-technician-mackay-ppe-suit.png",
   alt: "Supportive in-home guidance conversation",
   imageHeightClassName: "h-72",
-  imageClassName: "object-[center_12%]",
+  imageClassName: "object-[center_8%]",
 }
 ];
 
@@ -94,11 +94,16 @@ function ServiceCard({
           className={`object-cover ${imageClassName ?? "object-center"}`}
         />
       </div>
+
       <div className="p-8">
         <h3 className="text-[2rem] font-black uppercase leading-none tracking-tight text-slate-900">
           {title}
         </h3>
-        <p className="mt-5 text-[1.05rem] leading-8 text-slate-600">{description}</p>
+
+        <p className="mt-5 text-[1.05rem] leading-8 text-slate-600">
+          {description}
+        </p>
+
         <div className="mt-8">
           <a
             href={href}
