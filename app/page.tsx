@@ -49,7 +49,7 @@ const supportServices = [
     description:
       "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
     href: "/services",
-    image: "/biohazard-cleaning-technician-mackay-ppe-suit.png",
+    image: "/biohazard-cleaning-technician-mackay-ppe-suit.jpg",
     alt: "Biohazard technician in PPE in Mackay",
   },
 ];
