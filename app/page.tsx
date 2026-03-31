@@ -81,7 +81,7 @@ function ServiceCard({
   return (
     <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
       <div className="relative h-56 w-full">
-        <Image src={image} alt={alt} fill className="object-cover object-[centre_50%]" />
+        <Image src={image} alt={alt} fill className="object-cover object-[center_32%]" />
       </div>
       <div className="p-8">
         <h3 className="text-[2rem] font-black uppercase leading-none tracking-tight text-slate-900">
