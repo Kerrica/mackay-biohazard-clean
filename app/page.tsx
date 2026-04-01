@@ -8,6 +8,8 @@ const coreServices = [
     href: "/services",
     image: "/hoarded-room-mackay-before.jpg",
     alt: "Severe hoarded room before cleanup in Mackay",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
   },
   {
     title: "Unattended Death & Biohazard Cleaning",
@@ -16,6 +18,8 @@ const coreServices = [
     href: "/services",
     image: "/biohazard-cleaning-mackay-on-site-team.jpg",
     alt: "Biohazard cleanup in progress in Mackay property",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
   },
   {
     title: "Trauma & Crime Scene Cleaning",
@@ -24,6 +28,8 @@ const coreServices = [
     href: "/services",
     image: "/trauma-cleaning-mackay-ppe-doorway.jpg",
     alt: "Technician in PPE at Mackay property doorway",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
   },
   {
     title: "Vacate & Property Recovery",
@@ -32,6 +38,8 @@ const coreServices = [
     href: "/services",
     image: "/bedroom-cleaning-mackay-after.jpg",
     alt: "Recovered bedroom after cleanup in Mackay",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
   },
 ];
 
@@ -43,6 +51,8 @@ const supportServices = [
     href: "/services",
     image: "/storage-declutter-mackay-before.jpg",
     alt: "Storage area before decluttering in Mackay",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
   },
   {
     title: "Crisis Navigation",
@@ -51,11 +61,10 @@ const supportServices = [
     href: "/services",
     image: "/crisis-navigation-mackay.jpg",
     alt: "Supportive in-home guidance conversation",
-    imageHeightClassName: "h-56",
-    imageClassName: "object-center",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-[center_35%]",
   },
 ];
-
 const locations = [
   "Mackay",
   "Sarina",
@@ -108,21 +117,26 @@ function ServiceCard({
   imageHeightClassName?: string;
 }) {
   return (
-    <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
-      <div className={`relative w-full ${imageHeightClassName ?? "h-52"}`}>
+    <article className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
+      <div className={`relative w-full overflow-hidden bg-slate-100 ${imageHeightClassName ?? "h-64"}`}>
         <Image
           src={image}
           alt={alt}
           fill
-          className={`object-cover ${imageClassName ?? "object-center"}`}
+          className={`object-cover transition duration-500 ${imageClassName ?? "object-center"}`}
         />
       </div>
-      <div className="p-7">
-        <h3 className="text-[1.8rem] font-black uppercase leading-none tracking-tight text-slate-900">
+
+      <div className="flex flex-1 flex-col p-8">
+        <h3 className="text-[1.65rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900">
           {title}
         </h3>
-        <p className="mt-4 text-[1rem] leading-8 text-slate-600">{description}</p>
-        <div className="mt-7">
+
+        <p className="mt-4 text-[1rem] leading-7 text-slate-600">
+          {description}
+        </p>
+
+        <div className="mt-auto pt-7">
           <a
             href={href}
             className="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 font-bold text-slate-800 transition hover:border-slate-500"
@@ -134,7 +148,6 @@ function ServiceCard({
     </article>
   );
 }
-
 function FaqItem({
   question,
   answer,
@@ -261,7 +274,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {coreServices.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
@@ -283,7 +296,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+       <div className="grid gap-8 md:grid-cols-2">
           {supportServices.map((service) => (
             <ServiceCard key={service.title} {...service} />
           ))}
