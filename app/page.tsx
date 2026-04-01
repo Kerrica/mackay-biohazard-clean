@@ -44,16 +44,16 @@ const supportServices = [
     image: "/storage-declutter-mackay-before.jpg",
     alt: "Storage area before decluttering in Mackay",
   },
-{
-  title: "Crisis Navigation",
-  description:
-    "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
-  href: "/services",
-  image: "/crisis-navigation-mackay.jpg",
-  alt: "Supportive in-home guidance conversation",
-  imageHeightClassName: "h-56",
-  imageClassName: "object-center",
-}
+  {
+    title: "Crisis Navigation",
+    description:
+      "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
+    href: "/services",
+    image: "/crisis-navigation-mackay.jpg",
+    alt: "Supportive in-home guidance conversation",
+    imageHeightClassName: "h-56",
+    imageClassName: "object-center",
+  },
 ];
 
 const locations = [
@@ -65,6 +65,29 @@ const locations = [
   "Airlie Beach",
   "Bowen",
   "Moranbah",
+];
+
+const faqs = [
+  {
+    question: "What kinds of situations do you help with?",
+    answer:
+      "Support is available for biohazard cleanup, trauma and crime scene cleaning, unattended death cleaning, hoarding and squalor recovery, vacate reset work, decluttering and crisis navigation.",
+  },
+  {
+    question: "Do I need to know exactly what service I need before I call?",
+    answer:
+      "No. Many people are unsure what category their situation falls into. The first step is simply making contact so the situation can be understood and the most practical next step identified.",
+  },
+  {
+    question: "Do you service areas outside Mackay?",
+    answer:
+      "Yes. Work is available across Mackay and surrounding regions including Sarina, the Whitsundays, Proserpine, Airlie Beach, Bowen and Moranbah.",
+  },
+  {
+    question: "Can decluttering and crisis navigation be booked without full remediation?",
+    answer:
+      "Yes. Those supports can be engaged on their own where the situation needs structure, practical direction or a calmer starting point rather than full specialist cleanup.",
+  },
 ];
 
 function ServiceCard({
@@ -86,7 +109,7 @@ function ServiceCard({
 }) {
   return (
     <article className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
-      <div className={`relative w-full ${imageHeightClassName ?? "h-56"}`}>
+      <div className={`relative w-full ${imageHeightClassName ?? "h-52"}`}>
         <Image
           src={image}
           alt={alt}
@@ -94,17 +117,12 @@ function ServiceCard({
           className={`object-cover ${imageClassName ?? "object-center"}`}
         />
       </div>
-
-      <div className="p-8">
-        <h3 className="text-[2rem] font-black uppercase leading-none tracking-tight text-slate-900">
+      <div className="p-7">
+        <h3 className="text-[1.8rem] font-black uppercase leading-none tracking-tight text-slate-900">
           {title}
         </h3>
-
-        <p className="mt-5 text-[1.05rem] leading-8 text-slate-600">
-          {description}
-        </p>
-
-        <div className="mt-8">
+        <p className="mt-4 text-[1rem] leading-8 text-slate-600">{description}</p>
+        <div className="mt-7">
           <a
             href={href}
             className="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 font-bold text-slate-800 transition hover:border-slate-500"
@@ -113,6 +131,23 @@ function ServiceCard({
           </a>
         </div>
       </div>
+    </article>
+  );
+}
+
+function FaqItem({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) {
+  return (
+    <article className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_10px_26px_rgba(23,49,88,0.06)]">
+      <h3 className="text-[1.35rem] font-black leading-tight text-slate-900">
+        {question}
+      </h3>
+      <p className="mt-4 text-[1rem] leading-8 text-slate-600">{answer}</p>
     </article>
   );
 }
@@ -217,10 +252,10 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Services
           </p>
-          <h2 className="mt-3 text-[2.6rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.5rem]">
+          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
             Specialist Remediation Services
           </h2>
-          <p className="mt-5 max-w-3xl text-[1.15rem] leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
             Targeted service lines for contaminated, traumatic and high-sensitivity
             property situations across Mackay and surrounding regions.
           </p>
@@ -238,10 +273,10 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Additional Support
           </p>
-          <h2 className="mt-3 text-[2.6rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.5rem]">
+          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
             Decluttering &amp; Crisis Navigation
           </h2>
-          <p className="mt-5 max-w-3xl text-[1.15rem] leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
             Some situations do not require full remediation. These services provide
             practical support, clearer direction and a starting point when the next step
             is not yet obvious.
@@ -280,10 +315,10 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Locations
           </p>
-          <h2 className="mt-3 text-[2.6rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.5rem]">
+          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
             Servicing Mackay and Surrounding Regions
           </h2>
-          <p className="mt-5 max-w-3xl text-[1.15rem] leading-8 text-slate-600">
+          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
             Immediate and scheduled response available across Mackay and nearby service
             areas.
           </p>
@@ -301,7 +336,82 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact" className="mt-16 bg-[#0f2230] text-white">
+      <section id="faq" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+        <div className="mb-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+            FAQ
+          </p>
+          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+            Common Questions
+          </h2>
+        </div>
+
+        <div className="grid gap-5 lg:grid-cols-2">
+          {faqs.map((faq) => (
+            <FaqItem key={faq.question} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-[1400px] px-6 py-4 pb-20 lg:px-10">
+        <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:grid lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="p-8 lg:p-12">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+              Request a Fast Quote
+            </p>
+            <h2 className="mt-3 text-[2.3rem] font-black leading-[0.96] tracking-tight text-slate-900">
+              Tell Us What You’re Dealing With
+            </h2>
+            <p className="mt-5 max-w-xl text-[1.05rem] leading-8 text-slate-600">
+              Every enquiry is treated confidentially. Share the location, urgency and a
+              brief outline of the situation and the next step can be clarified quickly.
+            </p>
+
+            <form className="mt-8 grid gap-4 sm:grid-cols-2">
+              <input
+                type="text"
+                placeholder="Name"
+                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
+              />
+              <input
+                type="text"
+                placeholder="Phone"
+                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
+              />
+              <textarea
+                placeholder="Brief description of the situation"
+                rows={5}
+                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
+              />
+              <div className="sm:col-span-2">
+                <button
+                  type="button"
+                  className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
+                >
+                  Send Enquiry
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div className="relative min-h-[420px]">
+            <Image
+              src="/crisis-navigation-mackay.jpg"
+              alt="Supportive in-home guidance meeting"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-[#0f2230]/18" />
+          </div>
+        </div>
+      </section>
+
+      <footer id="about" className="bg-[#0f2230] text-white">
         <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
           <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr_1fr]">
             <div>
@@ -309,8 +419,9 @@ export default function Home() {
                 Mackay Biohazard Cleaning
               </h3>
               <p className="mt-6 max-w-sm text-lg leading-8 text-slate-300">
-                Practical, discreet and controlled cleaning support for biohazard,
-                trauma, hoarding, squalor and difficult property situations.
+                Practical, discreet and controlled support for biohazard, trauma,
+                hoarding, squalor and difficult property situations across Mackay and
+                nearby regions.
               </p>
             </div>
 
@@ -327,7 +438,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div id="about">
+            <div>
               <h4 className="text-2xl font-black">Company</h4>
               <ul className="mt-6 space-y-3 text-lg text-slate-300">
                 <li>
@@ -346,7 +457,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:0405450705" className="hover:text-white">
+                  <a href="#contact" className="hover:text-white">
                     Contact
                   </a>
                 </li>
@@ -362,8 +473,8 @@ export default function Home() {
                 0405 450 705
               </a>
               <p className="mt-5 text-lg leading-8 text-slate-300">
-                Immediate contact for urgent situations. For non-urgent enquiries, use
-                the contact pathway on the site as the next step.
+                Immediate contact for urgent situations. For non-urgent matters, send an
+                enquiry and the next step can be clarified quickly.
               </p>
             </div>
           </div>
