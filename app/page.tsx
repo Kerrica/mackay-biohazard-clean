@@ -461,79 +461,135 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-[#0f2230] text-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
-          <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr_1fr]">
-            <div>
-              <h3 className="text-3xl font-black leading-tight">
-                Mackay Biohazard Cleaning
-              </h3>
-              <p className="mt-6 max-w-sm text-lg leading-8 text-slate-300">
-                Practical, discreet and controlled support for biohazard, trauma,
-                hoarding, squalor and difficult property situations across Mackay and
-                nearby regions.
-              </p>
-            </div>
+    <footer className="bg-[#0b1d2a] text-white">
+  <div className="mx-auto max-w-[1400px] px-6 py-18 lg:px-10">
+    <div className="grid gap-14 border-b border-white/10 pb-12 lg:grid-cols-[1.15fr_0.9fr_0.9fr_1.05fr]">
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+          Mackay Biohazard Cleaning
+        </p>
+        <h3 className="mt-4 text-[2.2rem] font-black leading-[1.02] tracking-tight">
+          Practical, discreet support when the situation feels too much
+        </h3>
+        <p className="mt-6 max-w-md text-[1.05rem] leading-8 text-slate-300">
+          Controlled support for biohazard, trauma, hoarding, squalor and complex
+          property situations across Mackay and surrounding regions.
+        </p>
+      </div>
 
-            <div>
-              <h4 className="text-2xl font-black">Services</h4>
-              <ul className="mt-6 space-y-3 text-lg text-slate-300">
-                <li>Biohazard Cleaning</li>
-                <li>Trauma & Crime Scene Cleaning</li>
-                <li>Unattended Death Cleaning</li>
-                <li>Hoarding & Squalor Recovery</li>
-                <li>Vacate & Property Recovery</li>
-                <li>Decluttering</li>
-                <li>Crisis Navigation</li>
-              </ul>
-            </div>
+      <div>
+        <h4 className="text-[1.35rem] font-black tracking-tight text-white">
+          Services
+        </h4>
+        <ul className="mt-6 space-y-3 text-[1.05rem] text-slate-300">
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Biohazard Cleaning
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Trauma & Crime Scene Cleaning
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Unattended Death Cleaning
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Hoarding & Squalor Recovery
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Vacate & Property Recovery
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Decluttering
+            </a>
+          </li>
+          <li>
+            <a href="/services" className="transition hover:text-white">
+              Crisis Navigation
+            </a>
+          </li>
+        </ul>
+      </div>
 
-            <div>
-              <h4 className="text-2xl font-black">Company</h4>
-              <ul className="mt-6 space-y-3 text-lg text-slate-300">
-                <li>
-                  <a href="#services" className="hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#locations" className="hover:text-white">
-                    Locations
-                  </a>
-                </li>
-                <li>
-                  <a href="#faq" className="hover:text-white">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div>
+        <h4 className="text-[1.35rem] font-black tracking-tight text-white">
+          Company
+        </h4>
+        <ul className="mt-6 space-y-3 text-[1.05rem] text-slate-300">
+          <li>
+            <a href="#about" className="transition hover:text-white">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#services" className="transition hover:text-white">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#locations" className="transition hover:text-white">
+              Locations
+            </a>
+          </li>
+          <li>
+            <a href="#faq" className="transition hover:text-white">
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="transition hover:text-white">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
 
-            <div>
-              <h4 className="text-2xl font-black">24/7 Urgent Response Line</h4>
-              <a
-                href="tel:0405450705"
-                className="mt-6 block text-4xl font-black text-[#ef4f45]"
-              >
-                0405 450 705
-              </a>
-              <p className="mt-5 text-lg leading-8 text-slate-300">
-                Immediate contact for urgent situations. For non-urgent matters, send an
-                enquiry and the next step can be clarified quickly.
-              </p>
-            </div>
-          </div>
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-300">
+          24/7 Urgent Response Line
+        </p>
+        <a
+          href="tel:0405450705"
+          className="mt-5 block text-[2.8rem] font-black leading-none tracking-tight text-[#ef4f45]"
+        >
+          0405 450 705
+        </a>
 
-          <div className="mt-14 border-t border-white/10 pt-8 text-base text-slate-400">
-            © 2026 Mackay Biohazard Cleaning. All rights reserved.
-          </div>
+        <p className="mt-5 text-[1.05rem] leading-8 text-slate-300">
+          Call for urgent situations requiring immediate contact.
+        </p>
+
+        <p className="mt-3 text-[1rem] leading-7 text-slate-400">
+          For non-urgent matters, send an enquiry and the next step can be clarified
+          quickly and confidentially.
+        </p>
+
+        <div className="mt-7">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 font-bold text-white transition hover:bg-white/10"
+          >
+            Send an Enquiry
+          </a>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <div className="flex flex-col gap-4 pt-8 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+      <p>© 2026 Mackay Biohazard Cleaning. All rights reserved.</p>
+      <p>Mackay, Queensland, Australia</p>
+    </div>
+  </div>
+</footer>  
     </main>
   );
 }
