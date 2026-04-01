@@ -260,6 +260,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+  <div className="mb-10 max-w-3xl">
+    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+      What Happens Next
+    </p>
+    <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+      A clear process when the situation feels overwhelming
+    </h2>
+    <p className="mt-5 text-[1.1rem] leading-8 text-slate-600">
+      The first step is not having all the answers. It is making contact so the
+      situation can be understood and the next move can be made clear.
+    </p>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    {nextSteps.map((item) => (
+      <StepCard
+        key={item.step}
+        step={item.step}
+        title={item.title}
+        description={item.description}
+      />
+    ))}
+  </div>
+</section>
       <section id="services" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
