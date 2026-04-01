@@ -98,7 +98,32 @@ const faqs = [
       "Yes. Those supports can be engaged on their own where the situation needs structure, practical direction or a calmer starting point rather than full specialist cleanup.",
   },
 ];
-
+const nextSteps = [
+  {
+    step: "01",
+    title: "Make Contact",
+    description:
+      "Call or send an enquiry with the location, urgency and a brief outline of the situation. You do not need to have everything figured out before reaching out.",
+  },
+  {
+    step: "02",
+    title: "We Assess the Situation",
+    description:
+      "The situation is reviewed to understand the level of response required, whether immediate action is needed and what the safest next step looks like.",
+  },
+  {
+    step: "03",
+    title: "A Clear Plan Is Confirmed",
+    description:
+      "You are given practical direction on scope, response timing and what happens next, so the process feels structured rather than overwhelming.",
+  },
+  {
+    step: "04",
+    title: "Discreet Support Moves Forward",
+    description:
+      "Cleanup, recovery or practical support is carried out in a controlled, respectful and confidential manner, with communication kept clear throughout.",
+  },
+];
 function ServiceCard({
   title,
   description,
@@ -148,7 +173,32 @@ function ServiceCard({
     </article>
   );
 }
-function FaqItem({
+function StepCard({
+  step,
+  title,
+  description,
+}: {
+  step: string;
+  title: string;
+  description: string;
+}) {
+  return (
+    <article className="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-[0_14px_34px_rgba(23,49,88,0.06)]">
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#dff3f8] text-sm font-black tracking-[0.08em] text-[#2d99b3]">
+          {step}
+        </div>
+        <h3 className="text-[1.35rem] font-black leading-tight text-slate-900">
+          {title}
+        </h3>
+      </div>
+
+      <p className="mt-5 text-[1rem] leading-8 text-slate-600">
+        {description}
+      </p>
+    </article>
+  );
+}function FaqItem({
   question,
   answer,
 }: {
