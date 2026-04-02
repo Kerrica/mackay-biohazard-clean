@@ -220,8 +220,6 @@ function StepCard({
   );
 }
 
-<section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
-
 function HeroSignal({
   text,
 }: {
@@ -361,7 +359,7 @@ export default function Home() {
     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
       What Happens Next
     </p>
-   <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
+  <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
   <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
     <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
       <div>
