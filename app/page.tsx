@@ -123,12 +123,15 @@ const nextSteps = [
     description:
       "Cleanup, recovery or practical support is carried out in a controlled, respectful and confidential manner, with communication kept clear throughout.",
   },
-  const heroSignals = [
+];
+
+const heroSignals = [
   "Discreet and confidential response",
   "Urgent and scheduled support",
   "Mackay and surrounding regions",
   "Clear next steps from first contact",
 ];
+
 function ServiceCard({
   title,
   description,
@@ -148,12 +151,18 @@ function ServiceCard({
 }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)]">
-      <div className={`relative w-full overflow-hidden bg-slate-100 ${imageHeightClassName ?? "h-64"}`}>
+      <div
+        className={`relative w-full overflow-hidden bg-slate-100 ${
+          imageHeightClassName ?? "h-64"
+        }`}
+      >
         <Image
           src={image}
           alt={alt}
           fill
-          className={`object-cover transition duration-500 ${imageClassName ?? "object-center"}`}
+          className={`object-cover transition duration-500 ${
+            imageClassName ?? "object-center"
+          }`}
         />
       </div>
 
@@ -178,6 +187,7 @@ function ServiceCard({
     </article>
   );
 }
+
 function StepCard({
   step,
   title,
@@ -203,7 +213,9 @@ function StepCard({
       </p>
     </article>
   );
- function HeroSignal({
+}
+
+function HeroSignal({
   text,
 }: {
   text: string;
@@ -213,8 +225,9 @@ function StepCard({
       {text}
     </div>
   );
-} 
-}function FaqItem({
+}
+
+function FaqItem({
   question,
   answer,
 }: {
