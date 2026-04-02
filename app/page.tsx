@@ -198,17 +198,22 @@ function StepCard({
   description: string;
 }) {
   return (
-    <article className="rounded-[1.75rem] border border-slate-200 bg-white p-7 shadow-[0_14px_34px_rgba(23,49,88,0.06)]">
-      <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#dff3f8] text-sm font-black tracking-[0.08em] text-[#2d99b3]">
+    <article className="group relative overflow-hidden rounded-[1.9rem] border border-slate-200 bg-white p-7 shadow-[0_16px_38px_rgba(23,49,88,0.07)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(23,49,88,0.10)]">
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#2d99b3] via-cyan-300 to-transparent" />
+
+      <div className="flex items-start justify-between gap-5">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#dff3f8] text-sm font-black tracking-[0.08em] text-[#2d99b3]">
           {step}
         </div>
-        <h3 className="text-[1.35rem] font-black leading-tight text-slate-900">
-          {title}
-        </h3>
+
+        <div className="h-px flex-1 bg-slate-200 mt-7" />
       </div>
 
-      <p className="mt-5 text-[1rem] leading-8 text-slate-600">
+      <h3 className="mt-6 text-[1.35rem] font-black leading-tight tracking-tight text-slate-900">
+        {title}
+      </h3>
+
+      <p className="mt-4 text-[1rem] leading-8 text-slate-600">
         {description}
       </p>
     </article>
@@ -354,46 +359,48 @@ export default function Home() {
     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
       What Happens Next
     </p>
-    <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
-      A clear process when the situation feels overwhelming
-    </h2>
-    <p className="mt-5 text-[1.1rem] leading-8 text-slate-600">
-      The first step is not having all the answers. It is making contact so the
-      situation can be understood and the next move can be made clear.
-    </p>
-  </div>
+   <section className="mx-auto max-w-[1400px] px-6 pb-18 pt-24 lg:px-10">
+  <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
+    <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <div>
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+          What Happens Next
+        </p>
 
-  <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-    {nextSteps.map((item) => (
-      <StepCard
-        key={item.step}
-        step={item.step}
-        title={item.title}
-        description={item.description}
-      />
-    ))}
+        <h2 className="mt-3 max-w-xl text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+          A clear process when the situation feels overwhelming
+        </h2>
+
+        <p className="mt-5 max-w-xl text-[1.08rem] leading-8 text-slate-600">
+          The first step is not having all the answers. It is making contact so
+          the situation can be understood, the response level can be assessed
+          and the next move can be made clear.
+        </p>
+
+        <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2d99b3]">
+            Designed to reduce overwhelm
+          </p>
+          <p className="mt-3 text-[1rem] leading-8 text-slate-600">
+            Sensitive situations are easier to manage when the process is calm,
+            structured and clearly explained from the outset.
+          </p>
+        </div>
+      </div>
+
+      <div className="grid gap-5 md:grid-cols-2">
+        {nextSteps.map((item) => (
+          <StepCard
+            key={item.step}
+            step={item.step}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    </div>
   </div>
 </section>
-      <section id="services" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
-        <div className="mb-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-            Services
-          </p>
-          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
-            Specialist Remediation Services
-          </h2>
-          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
-            Targeted service lines for contaminated, traumatic and high-sensitivity
-            property situations across Mackay and surrounding regions.
-          </p>
-        </div>
-
-       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-          {coreServices.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
-        </div>
-      </section>
 
       <section className="mx-auto max-w-[1400px] px-6 py-4 lg:px-10">
         <div className="mb-10">
