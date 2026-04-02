@@ -123,6 +123,11 @@ const nextSteps = [
     description:
       "Cleanup, recovery or practical support is carried out in a controlled, respectful and confidential manner, with communication kept clear throughout.",
   },
+  const heroSignals = [
+  "Discreet and confidential response",
+  "Urgent and scheduled support",
+  "Mackay and surrounding regions",
+  "Clear next steps from first contact",
 ];
 function ServiceCard({
   title,
@@ -198,6 +203,17 @@ function StepCard({
       </p>
     </article>
   );
+ function HeroSignal({
+  text,
+}: {
+  text: string;
+}) {
+  return (
+    <div className="rounded-[1.25rem] border border-slate-200 bg-white px-5 py-4 text-sm font-bold text-slate-800 shadow-[0_10px_24px_rgba(23,49,88,0.06)]">
+      {text}
+    </div>
+  );
+} 
 }function FaqItem({
   question,
   answer,
@@ -269,7 +285,7 @@ export default function Home() {
               priority
               className="object-cover object-center"
             />
-            <div className="absolute inset-0 bg-[#0f2230]/68" />
+            <div className="absolute inset-0 bg-[#0f2230]/74" />
 
             <div className="relative z-10 flex min-h-[720px] items-center">
               <div className="mx-auto w-full max-w-[1400px] px-6 lg:px-10">
@@ -309,8 +325,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+<section className="relative z-20 -mt-12 px-6 lg:px-10">
+  <div className="mx-auto max-w-[1400px]">
+    <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-[0_18px_44px_rgba(23,49,88,0.10)] lg:p-6">
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {heroSignals.map((item) => (
+          <HeroSignal key={item} text={item} />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+      <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
   <div className="mb-10 max-w-3xl">
     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
       What Happens Next
