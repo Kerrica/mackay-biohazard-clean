@@ -396,27 +396,62 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section className="mx-auto max-w-[1400px] px-6 py-4 lg:px-10">
-        <div className="mb-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-            Additional Support
-          </p>
-          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
-            Decluttering &amp; Crisis Navigation
-          </h2>
-          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
-            Some situations do not require full remediation. These services provide
-            practical support, clearer direction and a starting point when the next step
-            is not yet obvious.
-          </p>
-        </div>
+ <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+  <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+        Additional Support
+      </p>
 
-       <div className="grid gap-8 md:grid-cols-2">
-          {supportServices.map((service) => (
-            <ServiceCard key={service.title} {...service} />
-          ))}
-        </div>
-      </section>
+      <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+        Decluttering &amp; Crisis Navigation
+      </h2>
+
+      <p className="mt-5 max-w-3xl text-[1.08rem] leading-8 text-slate-600">
+        Some situations do not require full remediation. These services provide
+        practical support, clearer direction and a starting point when the next
+        step is not yet obvious.
+      </p>
+    </div>
+
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+      {supportServices.map((service) => (
+        <article
+          key={service.title}
+          className="overflow-hidden rounded-[1.9rem] border border-slate-200 bg-slate-50 shadow-[0_12px_30px_rgba(23,49,88,0.05)]"
+        >
+          <div className={`relative w-full overflow-hidden bg-slate-100 ${service.imageHeightClassName ?? "h-64"}`}>
+            <Image
+              src={service.image}
+              alt={service.alt}
+              fill
+              className={`object-cover transition duration-500 ${service.imageClassName ?? "object-center"}`}
+            />
+          </div>
+
+          <div className="p-8">
+            <h3 className="text-[2rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900">
+              {service.title}
+            </h3>
+
+            <p className="mt-5 text-[1rem] leading-8 text-slate-600">
+              {service.description}
+            </p>
+
+            <div className="mt-8">
+              <a
+                href={service.href}
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 font-bold text-slate-800 transition hover:border-slate-500"
+              >
+                Find Out More
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>   
 
     
       <section id="about" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
