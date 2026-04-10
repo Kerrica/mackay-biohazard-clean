@@ -418,75 +418,94 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
-        <div className="rounded-[2rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-              Why People Reach Out
-            </p>
+     <section id="about" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+  <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-[0_18px_44px_rgba(23,49,88,0.08)]">
+    <div className="grid gap-0 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="px-8 py-10 lg:px-12 lg:py-14">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+          Why People Reach Out
+        </p>
 
-            <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
-              A calm, practical response when the situation feels too much
-            </h2>
+        <h2 className="mt-3 max-w-2xl text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+          A calm, practical response when the situation feels too much
+        </h2>
 
-            <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
-              Some situations need more than cleaning. They need calm judgement,
-              structure and a clear next step. Mackay Biohazard Cleaning provides
-              discreet, controlled support for hoarding, squalor, trauma, biohazard
-              and other complex property situations across Mackay and surrounding
-              regions.
-            </p>
+        <p className="mt-5 max-w-2xl text-[1.08rem] leading-8 text-slate-600">
+          Some situations need more than cleaning. They need calm judgement,
+          structure and a clear next step. Mackay Biohazard Cleaning provides
+          discreet, controlled support for hoarding, squalor, trauma, biohazard
+          and other complex property situations across Mackay and surrounding
+          regions.
+        </p>
 
-            <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
-              Every enquiry is handled with respect, confidentiality and practical
-              direction. The first step is simply understanding what is happening,
-              what level of response is needed and how to move forward safely.
+        <p className="mt-5 max-w-2xl text-[1.08rem] leading-8 text-slate-600">
+          Every enquiry is handled with respect, confidentiality and practical
+          direction. The first step is simply understanding what is happening,
+          what level of response is needed and how to move forward safely.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700">
+            Discreet and confidential
+          </span>
+          <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700">
+            Clear next steps
+          </span>
+          <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700">
+            Urgent and scheduled support
+          </span>
+          <span className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700">
+            Mackay and surrounding regions
+          </span>
+        </div>
+      </div>
+
+      <div className="border-t border-slate-200 bg-slate-50 lg:border-l lg:border-t-0">
+        <div className="grid gap-0 sm:grid-cols-2">
+          <div className="border-b border-slate-200 p-7 sm:border-r">
+            <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
+              Discreet and confidential
+            </h3>
+            <p className="mt-3 text-[1rem] leading-7 text-slate-600">
+              Sensitive situations are handled with respect, privacy and clear
+              communication.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-              <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
-                Discreet and confidential
-              </h3>
-              <p className="mt-3 text-[1rem] leading-7 text-slate-600">
-                Sensitive situations are handled with respect, privacy and clear
-                communication.
-              </p>
-            </div>
+          <div className="border-b border-slate-200 p-7">
+            <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
+              Clear next steps
+            </h3>
+            <p className="mt-3 text-[1rem] leading-7 text-slate-600">
+              You do not need to know exactly what service to ask for before
+              making contact.
+            </p>
+          </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-              <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
-                Clear next steps
-              </h3>
-              <p className="mt-3 text-[1rem] leading-7 text-slate-600">
-                You do not need to know exactly what service to ask for before making
-                contact.
-              </p>
-            </div>
+          <div className="border-b border-slate-200 p-7 sm:border-b-0 sm:border-r">
+            <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
+              Practical local response
+            </h3>
+            <p className="mt-3 text-[1rem] leading-7 text-slate-600">
+              Support is available across Mackay and nearby service areas for
+              urgent and scheduled work.
+            </p>
+          </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-              <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
-                Practical local response
-              </h3>
-              <p className="mt-3 text-[1rem] leading-7 text-slate-600">
-                Support is available across Mackay and nearby service areas for urgent
-                and scheduled work.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-              <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
-                Calm, structured approach
-              </h3>
-              <p className="mt-3 text-[1rem] leading-7 text-slate-600">
-                The focus is on reducing overwhelm, restoring order and helping people
-                move forward.
-              </p>
-            </div>
+          <div className="p-7">
+            <h3 className="text-[1.2rem] font-black leading-tight text-slate-900">
+              Calm, structured approach
+            </h3>
+            <p className="mt-3 text-[1rem] leading-7 text-slate-600">
+              The focus is on reducing overwhelm, restoring order and helping
+              people move forward.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="locations" className="mx-auto max-w-[1400px] px-6 py-4 lg:px-10">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:p-12">
