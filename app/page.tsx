@@ -354,17 +354,12 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
-  <div className="mb-10 max-w-3xl">
-    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-      What Happens Next
-    </p>
-  <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
+     <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-24 lg:px-10">
   <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
     <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
       <div>
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-          What Happens Next
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]"> 
+         What Happens Next
         </p>
 
         <h2 className="mt-3 max-w-xl text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
@@ -401,7 +396,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
       <section className="mx-auto max-w-[1400px] px-6 py-4 lg:px-10">
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
