@@ -15,7 +15,7 @@ const coreServices = [
     title: "Unattended Death & Biohazard Cleaning",
     description:
       "Discrete response for contamination, odour concerns and high-sensitivity environments requiring controlled remediation.",
-    href: "/services/hoard-squalor-recovery",
+    href: "/services/unattended-death-biohazard-cleaning",
     image: "/biohazard-cleaning-mackay-on-site-team.jpg",
     alt: "Biohazard cleanup in progress in Mackay property",
     imageHeightClassName: "h-64",
