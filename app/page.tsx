@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 const coreServices = [
   {
     title: "Hoard & Squalor Recovery",
@@ -41,7 +40,18 @@ const coreServices = [
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
+  {
+    title: "Meth Lab Clean Up",
+    description:
+      "Controlled support for suspected or confirmed drug-affected properties requiring specialist decontamination and practical next steps.",
+    href: "/services/meth-lab-clean-up",
+    image: "/biohazard-cleaning-mackay-on-site-team.jpg",
+    alt: "Specialist remediation team on site",
+    imageHeightClassName: "h-64",
+    imageClassName: "object-center",
+  },
 ];
+
 
 const supportServices = [
   {
@@ -411,7 +421,7 @@ export default function Home() {
     </p>
   </div>
 
-  <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+  <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
     {coreServices.map((service) => (
       <ServiceCard key={service.title} {...service} />
     ))}
@@ -716,48 +726,52 @@ export default function Home() {
       </div>
 
       <div>
-        <h4 className="text-[1.35rem] font-black tracking-tight text-white">
-          Services
-        </h4>
-        <ul className="mt-6 space-y-3 text-[1.05rem] text-slate-300">
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Biohazard Cleaning
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Trauma & Crime Scene Cleaning
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Unattended Death Cleaning
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Hoarding & Squalor Recovery
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Vacate & Property Recovery
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Decluttering
-            </a>
-          </li>
-          <li>
-            <a href="/services" className="transition hover:text-white">
-              Crisis Navigation
-            </a>
-          </li>
-        </ul>
-      </div>
-
+  <h4 className="text-[1.35rem] font-black tracking-tight text-white">
+    Services
+  </h4>
+  <ul className="mt-6 space-y-3 text-[1.05rem] text-slate-300">
+    <li>
+      <a href="/services/unattended-death-biohazard-cleaning" className="transition hover:text-white">
+        Biohazard Cleaning
+      </a>
+    </li>
+    <li>
+      <a href="/services/trauma-crime-scene-cleaning" className="transition hover:text-white">
+        Trauma & Crime Scene Cleaning
+      </a>
+    </li>
+    <li>
+      <a href="/services/unattended-death-biohazard-cleaning" className="transition hover:text-white">
+        Unattended Death Cleaning
+      </a>
+    </li>
+    <li>
+      <a href="/services/hoard-squalor-recovery" className="transition hover:text-white">
+        Hoarding & Squalor Recovery
+      </a>
+    </li>
+    <li>
+      <a href="/services/vacate-property-recovery" className="transition hover:text-white">
+        Vacate & Property Recovery
+      </a>
+    </li>
+    <li>
+      <a href="/services/meth-lab-clean-up" className="transition hover:text-white">
+        Meth Lab Clean Up
+      </a>
+    </li>
+    <li>
+      <a href="/services/decluttering" className="transition hover:text-white">
+        Decluttering
+      </a>
+    </li>
+    <li>
+      <a href="/services/crisis-navigation" className="transition hover:text-white">
+        Crisis Navigation
+      </a>
+    </li>
+  </ul>
+</div>
       <div>
         <h4 className="text-[1.35rem] font-black tracking-tight text-white">
           Company
