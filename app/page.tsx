@@ -48,7 +48,7 @@ const supportServices = [
     title: "Decluttering",
     description:
       "Hands-on support to clear, sort and reset rooms, storage areas and homes that have become difficult to manage. Ideal where function needs to be restored but full remediation is not required.",
-    href: "/services",
+    href: "/services/decluttering",
     image: "/storage-declutter-mackay-before.jpg",
     alt: "Storage area before decluttering in Mackay",
     imageHeightClassName: "h-64",
