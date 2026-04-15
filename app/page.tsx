@@ -395,6 +395,28 @@ export default function Home() {
     </div>
   </div>
 </section>
+<section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+  <div className="mb-10">
+    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+      Services
+    </p>
+
+    <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+      Specialist Remediation Services
+    </h2>
+
+    <p className="mt-5 max-w-3xl text-[1.08rem] leading-8 text-slate-600">
+      Targeted service lines for contaminated, traumatic and high-sensitivity
+      property situations, based in Mackay and available where needed.
+    </p>
+  </div>
+
+  <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+    {coreServices.map((service) => (
+      <ServiceCard key={service.title} {...service} />
+    ))}
+  </div>
+</section>
 <section id="services" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
   <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
     <div className="max-w-3xl">
