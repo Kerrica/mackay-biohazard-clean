@@ -301,9 +301,10 @@ export default function Home() {
               alt="Severe hoarded room before cleanup in Mackay"
               fill
               priority
-              className="object-cover object-center"
+             className="object-cover object-[center_35%]"
             />
-            <div className="absolute inset-0 bg-[#0f2230]/74" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0f2230]/88 via-[#0f2230]/72 to-[#0f2230]/52" />
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#edf3f3] via-[#edf3f3]/70 to-transparent" />
 
             <div className="relative z-10 flex min-h-[720px] items-center">
               <div className="mx-auto w-full max-w-[1400px] px-6 lg:px-10">
@@ -318,8 +319,7 @@ export default function Home() {
 
                   <p className="mt-7 max-w-[620px] text-[1.2rem] leading-9 text-slate-200">
                     Discreet, controlled support for hoarding, squalor, trauma,
-                    biohazard and complex property situations across Mackay and surrounding
-                    regions.
+                    biohazard and complex property situations, based in Mackay and available where needed. 
                   </p>
 
                   <div className="mt-10 flex flex-wrap gap-4">
