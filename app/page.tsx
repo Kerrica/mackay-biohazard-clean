@@ -395,7 +395,7 @@ export default function Home() {
     </div>
   </div>
 </section>
- <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+<section id="services" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
   <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white px-8 py-10 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:px-12 lg:py-14">
     <div className="max-w-3xl">
       <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
