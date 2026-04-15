@@ -52,7 +52,6 @@ const coreServices = [
   },
 ];
 
-
 const supportServices = [
   {
     title: "Decluttering",
@@ -75,6 +74,7 @@ const supportServices = [
     imageClassName: "object-[center_35%]",
   },
 ];
+
 const locations = [
   "Mackay",
   "Sarina",
