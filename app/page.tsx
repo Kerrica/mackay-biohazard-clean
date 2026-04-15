@@ -584,65 +584,82 @@ export default function Home() {
           ))}
         </div>
       </section>
+<section id="contact" className="mx-auto max-w-[1400px] px-6 py-4 pb-20 lg:px-10">
+  <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:grid lg:grid-cols-[0.95fr_1.05fr]">
+    <div className="p-8 lg:p-12">
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+        Request a Fast Quote
+      </p>
 
-      <section id="contact" className="mx-auto max-w-[1400px] px-6 py-4 pb-20 lg:px-10">
-        <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:grid lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="p-8 lg:p-12">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-              Request a Fast Quote
-            </p>
-            <h2 className="mt-3 text-[2.3rem] font-black leading-[0.96] tracking-tight text-slate-900">
-              Tell Us What You’re Dealing With
-            </h2>
-            <p className="mt-5 max-w-xl text-[1.05rem] leading-8 text-slate-600">
-              Every enquiry is treated confidentially. Share the location, urgency and a
-              brief outline of the situation and the next step can be clarified quickly.
-            </p>
+      <h2 className="mt-3 text-[2.3rem] font-black leading-[0.96] tracking-tight text-slate-900">
+        Tell Me What You’re Dealing With
+      </h2>
 
-            <form className="mt-8 grid gap-4 sm:grid-cols-2">
-              <input
-                type="text"
-                placeholder="Name"
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
-              />
-              <input
-                type="text"
-                placeholder="Phone"
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
-              />
-              <textarea
-                placeholder="Brief description of the situation"
-                rows={5}
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
-              />
-              <div className="sm:col-span-2">
-                <button
-                  type="button"
-                  className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
-                >
-                  Send Enquiry
-                </button>
-              </div>
-            </form>
-          </div>
+      <p className="mt-5 max-w-xl text-[1.05rem] leading-8 text-slate-600">
+        Every enquiry is handled confidentially. Share the location, urgency and
+        a brief outline of the situation so the next step can be clarified
+        quickly.
+      </p>
 
-          <div className="relative min-h-[420px]">
-            <Image
-              src="/crisis-navigation-mackay.jpg"
-              alt="Supportive in-home guidance meeting"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-[#0f2230]/18" />
-          </div>
+      <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2d99b3]">
+          Travel Available
+        </p>
+        <p className="mt-3 text-[1rem] leading-8 text-slate-600">
+          Based in Mackay and regularly servicing surrounding regions, with
+          travel arranged for other locations where support is needed.
+        </p>
+      </div>
+
+      <form className="mt-8 grid gap-4 sm:grid-cols-2">
+        <input
+          type="text"
+          placeholder="Name"
+          className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none"
+        />
+        <input
+          type="text"
+          placeholder="Phone"
+          className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
+        />
+        <input
+          type="text"
+          placeholder="Location / suburb / town"
+          className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
+        />
+        <textarea
+          placeholder="Brief description of the situation"
+          rows={5}
+          className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none sm:col-span-2"
+        />
+        <div className="sm:col-span-2">
+          <button
+            type="button"
+            className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
+          >
+            Send Enquiry
+          </button>
         </div>
-      </section>
+      </form>
+    </div>
 
+    <div className="relative min-h-[420px]">
+      <Image
+        src="/crisis-navigation-mackay.jpg"
+        alt="Supportive in-home guidance meeting"
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-[#0f2230]/18" />
+    </div>
+  </div>
+</section>
+     
     <footer className="bg-[#0b1d2a] text-white">
   <div className="mx-auto max-w-[1400px] px-6 py-18 lg:px-10">
     <div className="grid gap-14 border-b border-white/10 pb-12 lg:grid-cols-[1.15fr_0.9fr_0.9fr_1.05fr]">
