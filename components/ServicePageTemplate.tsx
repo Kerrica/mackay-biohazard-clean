@@ -77,8 +77,16 @@ export default function ServicePageTemplate({
 
           <div className="relative z-10 mx-auto flex min-h-[620px] max-w-[1400px] items-center px-6 py-20 lg:px-10">
             <div className="max-w-[760px]">
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
-                {eyebrow}
+              <div className="flex flex-wrap items-center gap-4 text-sm font-semibold uppercase tracking-[0.08em]">
+  <a
+    href="/services"
+    className="text-cyan-300 transition hover:text-white"
+  >
+    Back to Services
+  </a>
+  <span className="text-white/30">/</span>
+  <p className="text-cyan-300">{eyebrow}</p>
+</div>
               </p>
 
               <h1 className="mt-5 text-[3.2rem] font-black uppercase leading-[0.92] tracking-tight text-white sm:text-[4.8rem]">
