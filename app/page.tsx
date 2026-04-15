@@ -523,31 +523,50 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section id="locations" className="mx-auto max-w-[1400px] px-6 py-4 lg:px-10">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:p-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
-            Locations
-          </p>
-          <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
-            Servicing Mackay and Surrounding Regions
-          </h2>
-          <p className="mt-5 max-w-3xl text-[1.1rem] leading-8 text-slate-600">
-            Immediate and scheduled response available across Mackay and nearby service
-            areas.
-          </p>
+     <section id="locations" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+  <div className="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:p-12">
+    <div className="max-w-4xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
+        Locations
+      </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {locations.map((location) => (
-              <div
-                key={location}
-                className="rounded-[1.2rem] border border-slate-200 bg-slate-50 px-5 py-4 text-lg font-bold text-slate-800"
-              >
-                {location}
-              </div>
-            ))}
-          </div>
+      <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
+        Based in Mackay, Available Wherever Needed
+      </h2>
+
+      <p className="mt-5 max-w-3xl text-[1.08rem] leading-8 text-slate-600">
+        Immediate and scheduled response is available across Mackay and surrounding
+        regions, with travel arranged for other locations where support is needed.
+      </p>
+
+      <p className="mt-4 max-w-3xl text-[1rem] leading-8 text-slate-600">
+        Regular service areas include the locations below, however work is not
+        limited to these regions.
+      </p>
+    </div>
+
+    <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {locations.map((location) => (
+        <div
+          key={location}
+          className="rounded-[1.2rem] border border-slate-200 bg-slate-50 px-5 py-4 text-lg font-bold text-slate-800"
+        >
+          {location}
         </div>
-      </section>
+      ))}
+    </div>
+
+    <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-[#f8fbfb] p-6">
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#2d99b3]">
+        Travel Available
+      </p>
+      <p className="mt-3 max-w-3xl text-[1rem] leading-8 text-slate-600">
+        If the situation is outside the usual service area, travel can be discussed
+        and arranged based on location, urgency and scope of work.
+      </p>
+    </div>
+  </div>
+</section> 
 
       <section id="faq" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
         <div className="mb-10">
