@@ -5,7 +5,7 @@ const coreServices = [
     title: "Hoard & Squalor Recovery",
     description:
       "Structured cleanup, sorting, clearing and property recovery for severe clutter, squalor and difficult living environments.",
-    href: "/services",
+    href: "/services/hoard-squalor-recovery",
     image: "/hoarded-room-mackay-before.jpg",
     alt: "Severe hoarded room before cleanup in Mackay",
     imageHeightClassName: "h-64",
