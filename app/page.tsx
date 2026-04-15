@@ -648,15 +648,33 @@ export default function Home() {
       </form>
     </div>
 
-    <div className="relative min-h-[420px]">
-      <Image
-        src="/crisis-navigation-mackay.jpg"
-        alt="Supportive in-home guidance meeting"
-        fill
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-[#0f2230]/18" />
+   <div className="relative min-h-[420px]">
+  <Image
+    src="/crisis-navigation-mackay.jpg"
+    alt="Supportive in-home guidance meeting"
+    fill
+    className="object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-[#0f2230]/78 via-[#0f2230]/32 to-[#0f2230]/12" />
+
+  <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10">
+    <div className="max-w-md rounded-[1.5rem] border border-white/15 bg-white/10 p-6 backdrop-blur-sm">
+      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
+        Confidential Enquiries
+      </p>
+
+      <h3 className="mt-3 text-[1.8rem] font-black leading-[1] tracking-tight text-white">
+        Clear next steps, handled discreetly
+      </h3>
+
+      <p className="mt-4 text-[1rem] leading-7 text-slate-200">
+        Based in Mackay and available to travel where needed. Share the
+        location, urgency and situation details and the most practical next
+        step can be clarified quickly.
+      </p>
     </div>
+  </div>
+</div> 
   </div>
 </section>
      
