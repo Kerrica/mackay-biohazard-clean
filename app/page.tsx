@@ -35,7 +35,7 @@ const coreServices = [
     title: "Vacate & Property Recovery",
     description:
       "Fast, practical reset support for families, landlords, agents and time-sensitive property handovers.",
-    href: "/services",
+    href: "/services/vacate-property-recovery",
     image: "/bedroom-cleaning-mackay-after.jpg",
     alt: "Recovered bedroom after cleanup in Mackay",
     imageHeightClassName: "h-64",
