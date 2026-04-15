@@ -199,8 +199,7 @@ function StepCard({
 }) {
   return (
     <article className="group relative overflow-hidden rounded-[1.9rem] border border-slate-200 bg-white p-7 shadow-[0_16px_38px_rgba(23,49,88,0.07)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(23,49,88,0.10)]">
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#2d99b3] via-cyan-300 to-transparent" />
-
+      
       <div className="flex items-start justify-between gap-5">
         <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#dff3f8] text-sm font-black tracking-[0.08em] text-[#2d99b3]">
           {step}
@@ -343,7 +342,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="relative z-20 -mt-12 px-6 lg:px-10">
+<section className="relative z-20 -mt-20 px-6 lg:px-10">
   <div className="mx-auto max-w-[1400px]">
     <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-[0_18px_44px_rgba(23,49,88,0.10)] lg:p-6">
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
