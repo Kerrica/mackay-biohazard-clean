@@ -25,7 +25,7 @@ const coreServices = [
     title: "Trauma & Crime Scene Cleaning",
     description:
       "Calm, practical cleanup after traumatic events, with clear communication from first contact through to handover.",
-    href: "/services",
+    href: "/services/trauma-crime-scene-cleaning",
     image: "/trauma-cleaning-mackay-ppe-doorway.jpg",
     alt: "Technician in PPE at Mackay property doorway",
     imageHeightClassName: "h-64",
