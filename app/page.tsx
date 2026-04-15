@@ -343,7 +343,6 @@ export default function Home() {
                     </a>
 
                     <a
-                   <a
   href="/services"
   className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
 >
