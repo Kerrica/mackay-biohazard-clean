@@ -268,10 +268,12 @@ export default function Home() {
           </div>
 
           <nav className="hidden items-center gap-10 md:flex">
-            <a href="/services" className="font-bold text-slate-700 hover:text-slate-900">
-  Services
+          <a
+  href="/services"
+  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
+>
+  View Services
 </a>
-            </a>
             <a href="#locations" className="font-bold text-slate-700 hover:text-slate-900">
               Locations
             </a>
