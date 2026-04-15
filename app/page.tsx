@@ -58,7 +58,7 @@ const supportServices = [
     title: "Crisis Navigation",
     description:
       "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
-    href: "/services",
+    href: "/services/crisis-navigation",
     image: "/crisis-navigation-mackay.jpg",
     alt: "Supportive in-home guidance conversation",
     imageHeightClassName: "h-64",
