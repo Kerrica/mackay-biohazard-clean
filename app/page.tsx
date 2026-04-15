@@ -274,19 +274,19 @@ export default function Home() {
 >
   View Services
 </a>
-            <a href="/services" className="font-bold text-slate-900 hover:text-black">
+            <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
             Services
             </a>
-            <a href="#locations" className="font-bold text-slate-700 hover:text-slate-900">
+            <a href="#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               Locations
             </a>
-            <a href="#about" className="font-bold text-slate-700 hover:text-slate-900">
+            <a href="#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               About
             </a>
-            <a href="#faq" className="font-bold text-slate-700 hover:text-slate-900">
+            <a href="#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               FAQ
             </a>
-            <a href="#contact" className="font-bold text-slate-700 hover:text-slate-900">
+            <a href="#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               Contact
             </a>
           </nav>
