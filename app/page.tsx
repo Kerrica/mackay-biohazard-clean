@@ -303,7 +303,7 @@ export default function Home() {
              className="object-cover object-[center_35%]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#0f2230]/88 via-[#0f2230]/72 to-[#0f2230]/52" />
-            <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#edf3f3]/88 via-[#edf3f3]/30 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-16 " />
 
             <div className="relative z-10 flex min-h-[720px] items-center">
               <div className="mx-auto w-full max-w-[1400px] px-6 lg:px-10">
