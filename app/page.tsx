@@ -344,7 +344,7 @@ export default function Home() {
       </section>
 <section className="relative z-20 -mt-20 px-6 lg:px-10">
   <div className="mx-auto max-w-[1400px]">
-    <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-[0_18px_44px_rgba(23,49,88,0.10)] lg:p-6">
+    <div className="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm lg:p-6">
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {heroSignals.map((item) => (
           <HeroSignal key={item} text={item} />
