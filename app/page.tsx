@@ -274,6 +274,9 @@ export default function Home() {
 >
   View Services
 </a>
+            <a href="/services" className="font-bold text-slate-900 hover:text-black">
+            Services
+            </a>
             <a href="#locations" className="font-bold text-slate-700 hover:text-slate-900">
               Locations
             </a>
