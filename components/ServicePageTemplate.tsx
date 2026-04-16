@@ -37,79 +37,47 @@ export default function ServicePageTemplate({
   faqs,
 }: ServicePageTemplateProps) {
   return (
-    <main className="min-h-screen bg-[#edf3f3]">
-    <nav className="hidden items-center gap-10 md:flex">
+        <main className="min-h-screen bg-[#edf3f3]">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
           <a
-  href="/services"
-  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
->
-  View Services
-</a>
+            href="/"
+            className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]"
+          >
+            MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
+          </a>
+
+          <nav className="hidden items-center gap-10 md:flex">
             <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-            Services
+              Services
             </a>
-            <a href="#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <a href="/#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               Locations
             </a>
-            <a href="#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <a href="/#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               About
             </a>
-            <a href="#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <a href="/#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               FAQ
             </a>
-            <a href="#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <a href="/#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
               Contact
             </a>
-          </nav>  
+          </nav>
 
-      <section className="relative overflow-hidden">
-        <div className="relative min-h-[620px]">
-          <Image
-            src={heroImage}
-            alt={heroAlt}
-            fill
-            priority
-            className="object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f2230]/88 via-[#0f2230]/70 to-[#0f2230]/50" />
-
-          <div className="relative z-10 mx-auto flex min-h-[620px] max-w-[1400px] items-center px-6 py-20 lg:px-10">
-            <div className="max-w-[760px]">
-                           <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="/services"
-                  className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.18em] text-cyan-300 transition hover:bg-white/20 hover:text-white"
-                >
-                  Back to Services
-                </a>
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-300">
-                  {eyebrow}
-                </p>
-              </div>             
-
-              <h1 className="mt-5 text-[3.2rem] font-black uppercase leading-[0.92] tracking-tight text-white sm:text-[4.8rem]">
-                {title}
-              </h1>
-
-              <p className="mt-7 max-w-[720px] text-[1.15rem] leading-9 text-slate-200">
-                {intro}
-              </p>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="tel:0405450705"
-                  className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
-                >
-                  Call the Response Line
-                </a>
-                <a
-                  href="#contact"
-                  className="rounded-full border border-white/40 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
-                >
-                  Request a Quote
-                </a>
-              </div>
-            </div>
+          <div className="flex items-center gap-5">
+            <a
+              href="tel:0405450705"
+              className="hidden text-[18px] font-bold text-slate-700 lg:block"
+            >
+              0405 450 705
+            </a>
+            <a
+              href="tel:0405450705"
+              className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
+            >
+              Call Now
+            </a>
           </div>
         </div>
       </section>
