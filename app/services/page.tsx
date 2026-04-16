@@ -110,16 +110,7 @@ function ServiceCard({
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#edf3f3]">
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
-          <a
-            href="/"
-            className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]"
-          >
-            MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
-          </a>
-    <main className="min-h-screen bg-[#edf3f3]">
+        <main className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
           <a
@@ -163,23 +154,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-          <div className="flex items-center gap-5">
-            <a
-              href="tel:0405450705"
-              className="hidden text-[18px] font-bold text-slate-700 lg:block"
-            >
-              0405 450 705
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
-            >
-              Request a Quote
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="relative overflow-hidden">
         <div className="relative min-h-[520px]">
           <Image
