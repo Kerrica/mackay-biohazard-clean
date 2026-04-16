@@ -47,6 +47,30 @@ export default function ServicePageTemplate({
             MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
           </a>
 
+           <nav className="hidden items-center gap-10 md:flex">
+          <a
+  href="/services"
+  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
+>
+  View Services
+</a>
+            <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            Services
+            </a>
+            <a href="#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+              Locations
+            </a>
+            <a href="#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+              About
+            </a>
+            <a href="#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+              FAQ
+            </a>
+            <a href="#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+              Contact
+            </a>
+          </nav>
+
           <div className="flex items-center gap-5">
             <a
               href="tel:0405450705"
