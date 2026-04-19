@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 const coreServices = [
   {
     title: "Hoard & Squalor Recovery",
@@ -257,8 +258,7 @@ function FaqItem({
     </article>
   );
 }
-function BackToTopLink() {
- function FloatingBackToTopButton() {
+function FloatingBackToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -283,8 +283,7 @@ function BackToTopLink() {
       ↑ Top
     </a>
   );
-} 
-}export default function Home() {
+}}export default function Home() {
   return (
    <main id="top" className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
@@ -874,7 +873,9 @@ function BackToTopLink() {
       <p>Mackay, Queensland, Australia</p>
     </div>
   </div>
-</footer>  
-    </main>
+</footer>
+
+<FloatingBackToTopButton />
+</main>
   );
 }
