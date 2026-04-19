@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Structured cleanup, sorting, clearing and property recovery for severe clutter, squalor and difficult living environments.",
     href: "/services/hoard-squalor-recovery",
     image: "/hoarded-room-mackay-before.jpg",
-    alt: "Severe hoarded room before cleanup in Mackay",
+    alt: "Hoarded room before recovery work",
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Discrete response for contamination, odour concerns and high-sensitivity environments requiring controlled remediation.",
     href: "/services/unattended-death-biohazard-cleaning",
     image: "/biohazard-cleaning-mackay-on-site-team.jpg",
-    alt: "Biohazard cleanup in progress in Mackay property",
+    alt: "Biohazard remediation team working on site",
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Calm, practical cleanup after traumatic events, with clear communication from first contact through to handover.",
     href: "/services/trauma-crime-scene-cleaning",
     image: "/trauma-cleaning-mackay-ppe-doorway.jpg",
-    alt: "Technician in PPE at Mackay property doorway",
+    alt: "Technician in PPE at property entrance",
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
       "Fast, practical reset support for families, landlords, agents and time-sensitive property handovers.",
     href: "/services/vacate-property-recovery",
     image: "/bedroom-cleaning-mackay-after.jpg",
-    alt: "Recovered bedroom after cleanup in Mackay",
+    alt: "Bedroom after property recovery work",
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
@@ -89,7 +89,7 @@ const supportServices = [
       "Hands-on support to clear, sort and reset rooms, storage areas and homes that have become difficult to manage. Ideal where function needs to be restored but full remediation is not required.",
     href: "/services/decluttering",
     image: "/storage-declutter-mackay-before.jpg",
-    alt: "Storage area before decluttering in Mackay",
+    alt: "Storage area before decluttering",
     imageHeightClassName: "h-64",
     imageClassName: "object-center",
   },
@@ -99,7 +99,7 @@ const supportServices = [
       "A clear starting point when the situation feels too complex to manage alone. Focused on guidance, coordination and practical next steps so people can move from overwhelm to action.",
     href: "/services/crisis-navigation",
     image: "/crisis-navigation-mackay.jpg",
-    alt: "Supportive in-home guidance conversation",
+    alt: "In-home support conversation",
     imageHeightClassName: "h-64",
     imageClassName: "object-[center_35%]",
   },
@@ -342,7 +342,7 @@ export default function Home() {
           <div className="relative min-h-[720px] w-full">
             <Image
               src="/hoarded-room-mackay-before.jpg"
-              alt="Severe hoarded room before cleanup in Mackay"
+              alt="Hoarded room before recovery work"
               fill
               priority
              className="object-cover object-[center_35%]"
@@ -716,7 +716,7 @@ export default function Home() {
    <div className="relative min-h-[420px]">
   <Image
     src="/crisis-navigation-mackay.jpg"
-    alt="Supportive in-home guidance meeting"
+    alt="In-home support conversation"
     fill
     className="object-cover"
   />
