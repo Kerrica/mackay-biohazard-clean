@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Decluttering Support Mackay",
+  description:
+    "Hands-on decluttering support in Mackay to clear, sort and reset homes, rooms and storage areas that have become difficult to manage. Practical, respectful support focused on restoring function and order.",
+  alternates: {
+    canonical: "/services/decluttering",
+  },
+  openGraph: {
+    title: "Decluttering Support Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Hands-on decluttering support in Mackay to clear, sort and reset homes, rooms and storage areas that have become difficult to manage. Practical, respectful support focused on restoring function and order.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/decluttering",
+    images: [
+      {
+        url: "/storage-declutter-mackay-before.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Decluttering support in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Decluttering Support Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Hands-on decluttering support in Mackay to clear, sort and reset homes, rooms and storage areas that have become difficult to manage. Practical, respectful support focused on restoring function and order.",
+    images: ["/storage-declutter-mackay-before.jpg"],
+  },
+};
 
 export default function DeclutteringPage() {
   return (
