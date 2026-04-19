@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Vacate & Property Recovery Mackay",
+  description:
+    "Fast, practical vacate and property recovery support in Mackay for time-sensitive handovers, property reset work and more difficult cleanup situations.",
+  alternates: {
+    canonical: "/services/vacate-property-recovery",
+  },
+  openGraph: {
+    title: "Vacate & Property Recovery Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Fast, practical vacate and property recovery support in Mackay for time-sensitive handovers, property reset work and more difficult cleanup situations.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/vacate-property-recovery",
+    images: [
+      {
+        url: "/bedroom-cleaning-mackay-after.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vacate and property recovery support in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Vacate & Property Recovery Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Fast, practical vacate and property recovery support in Mackay for time-sensitive handovers, property reset work and more difficult cleanup situations.",
+    images: ["/bedroom-cleaning-mackay-after.jpg"],
+  },
+};
 
 export default function VacatePropertyRecoveryPage() {
   return (
