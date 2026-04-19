@@ -155,7 +155,7 @@ export default function ServicePageTemplate({
             href="/services"
             className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
           >
-            All Services
+            View Services
           </Link>
           <Link
             href="/#contact"
