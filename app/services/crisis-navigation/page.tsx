@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Crisis Navigation Support Mackay",
+  description:
+    "Practical crisis navigation support in Mackay for situations that feel complex, urgent or hard to manage alone. Clear next steps, structured guidance and calm direction when the path forward is unclear.",
+  alternates: {
+    canonical: "/services/crisis-navigation",
+  },
+  openGraph: {
+    title: "Crisis Navigation Support Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Practical crisis navigation support in Mackay for situations that feel complex, urgent or hard to manage alone. Clear next steps, structured guidance and calm direction when the path forward is unclear.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/crisis-navigation",
+    images: [
+      {
+        url: "/crisis-navigation-mackay.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Crisis navigation support in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Crisis Navigation Support Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Practical crisis navigation support in Mackay for situations that feel complex, urgent or hard to manage alone. Clear next steps, structured guidance and calm direction when the path forward is unclear.",
+    images: ["/crisis-navigation-mackay.jpg"],
+  },
+};
 
 export default function CrisisNavigationPage() {
   return (
