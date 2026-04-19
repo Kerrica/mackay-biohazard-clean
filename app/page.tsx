@@ -283,7 +283,9 @@ function FloatingBackToTopButton() {
       ↑ Top
     </a>
   );
-}}export default function Home() {
+}
+
+export default function Home() {
   return (
    <main id="top" className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
