@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Hoard & Squalor Recovery Mackay",
+  description:
+    "Structured, respectful hoard and squalor recovery in Mackay for difficult living environments requiring staged clearing, practical intervention and a safer way forward.",
+  alternates: {
+    canonical: "/services/hoard-squalor-recovery",
+  },
+  openGraph: {
+    title: "Hoard & Squalor Recovery Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Structured, respectful hoard and squalor recovery in Mackay for difficult living environments requiring staged clearing, practical intervention and a safer way forward.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/hoard-squalor-recovery",
+    images: [
+      {
+        url: "/hoarded-room-mackay-before.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hoard and squalor recovery in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Hoard & Squalor Recovery Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Structured, respectful hoard and squalor recovery in Mackay for difficult living environments requiring staged clearing, practical intervention and a safer way forward.",
+    images: ["/hoarded-room-mackay-before.jpg"],
+  },
+};
 
 export default function HoardSqualorRecoveryPage() {
   return (
