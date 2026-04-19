@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type ServiceFaq = {
   question: string;
@@ -37,32 +38,47 @@ export default function ServicePageTemplate({
   faqs,
 }: ServicePageTemplateProps) {
   return (
-        <main className="min-h-screen bg-[#edf3f3]">
+    <main className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
-          <a
+          <Link
             href="/"
             className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]"
           >
             MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
-            <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <Link
+              href="/services"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Services
-            </a>
-            <a href="/#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#locations"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Locations
-            </a>
-            <a href="/#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#about"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               About
-            </a>
-            <a href="/#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#faq"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               FAQ
-            </a>
-            <a href="/#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#contact"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Contact
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-5">
@@ -82,7 +98,75 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+      <section className="relative overflow-hidden">
+        <div className="relative min-h-[520px]">
+          <Image
+            src={heroImage}
+            alt={heroAlt}
+            fill
+            priority
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f2230]/88 via-[#0f2230]/72 to-[#0f2230]/52" />
+
+          <div className="relative z-10 mx-auto flex min-h-[520px] max-w-[1400px] items-center px-6 py-20 lg:px-10">
+            <div className="max-w-[780px]">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
+                {eyebrow}
+              </p>
+
+              <h1 className="mt-5 text-[3rem] font-black uppercase leading-[0.92] tracking-tight text-white sm:text-[4.7rem]">
+                {title}
+              </h1>
+
+              <p className="mt-7 max-w-[720px] text-[1.15rem] leading-9 text-slate-200">
+                {intro}
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="tel:0405450705"
+                  className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
+                >
+                  Call the Response Line
+                </a>
+
+                <Link
+                  href="/services"
+                  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
+                >
+                  Back to Services
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 py-10 lg:px-10">
+        <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            Home
+          </Link>
+          <Link
+            href="/services"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            All Services
+          </Link>
+          <Link
+            href="/#contact"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            Request a Quote
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1400px] px-6 pb-16 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_16px_40px_rgba(23,49,88,0.08)] lg:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
@@ -186,7 +270,10 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-[1400px] px-6 py-4 pb-20 lg:px-10">
+      <section
+        id="contact"
+        className="mx-auto max-w-[1400px] px-6 py-4 pb-20 lg:px-10"
+      >
         <div className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:grid lg:grid-cols-[0.95fr_1.05fr]">
           <div className="p-8 lg:p-12">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
@@ -264,6 +351,15 @@ export default function ServicePageTemplate({
                   the location, urgency and situation details and the most
                   practical next step can be clarified quickly.
                 </p>
+
+                <div className="mt-6">
+                  <Link
+                    href="/services"
+                    className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/20"
+                  >
+                    View All Services
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
