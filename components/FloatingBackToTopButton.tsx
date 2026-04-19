@@ -13,7 +13,9 @@ export default function FloatingBackToTopButton() {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   if (!isVisible) return null;
