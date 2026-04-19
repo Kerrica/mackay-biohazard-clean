@@ -1,6 +1,35 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import FloatingBackToTopButton from "@/components/FloatingBackToTopButton";
-const coreServices = [
+
+export const metadata: Metadata = {
+  title: "Biohazard, Trauma & Hoarding Cleanup Mackay",
+  description:
+    "Discrete, practical support across Mackay for biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoarding and squalor recovery, vacate property recovery, decluttering and crisis navigation.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Biohazard, Trauma & Hoarding Cleanup Mackay",
+    description:
+      "Discrete, practical support across Mackay for biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoarding and squalor recovery, vacate property recovery, decluttering and crisis navigation.",
+    url: "https://www.mackaybiohazardcleaning.com.au",
+    images: [
+      {
+        url: "/hoarded-room-mackay-before.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Biohazard, trauma and hoarding cleanup services in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Biohazard, Trauma & Hoarding Cleanup Mackay",
+    description:
+      "Discrete, practical support across Mackay for biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoarding and squalor recovery, vacate property recovery, decluttering and crisis navigation.",
+    images: ["/hoarded-room-mackay-before.jpg"],
+  },
+};const coreServices = [
   {
     title: "Hoard & Squalor Recovery",
     description:
