@@ -273,7 +273,7 @@ function FloatingBackToTopButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!isVisible) return null;
+  if (isVisible) return null;
 
   return (
     <a
