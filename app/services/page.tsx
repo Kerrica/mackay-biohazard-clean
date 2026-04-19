@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "View specialist cleaning and support services across Mackay, including biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoard and squalor recovery, vacate property recovery, decluttering, crisis navigation and meth lab clean up.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Services | Mackay Biohazard Cleaning",
+    description:
+      "View specialist cleaning and support services across Mackay, including biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoard and squalor recovery, vacate property recovery, decluttering, crisis navigation and meth lab clean up.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services",
+    images: [
+      {
+        url: "/hoarded-room-mackay-before.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Specialist cleaning and support services in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Services | Mackay Biohazard Cleaning",
+    description:
+      "View specialist cleaning and support services across Mackay, including biohazard cleaning, trauma and crime scene cleaning, unattended death cleaning, hoard and squalor recovery, vacate property recovery, decluttering, crisis navigation and meth lab clean up.",
+    images: ["/hoarded-room-mackay-before.jpg"],
+  },
+};
 
 const specialistServices = [
   {
