@@ -92,7 +92,7 @@ export default function ServicePageTemplate({
               href="tel:0405450705"
               className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
             >
-              Call Now
+              Call 0405 450 705
             </a>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function ServicePageTemplate({
                   href="tel:0405450705"
                   className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
                 >
-                  Call the Response Line
+                  Call 0405 450 705
                 </a>
 
                 <Link
@@ -357,7 +357,7 @@ export default function ServicePageTemplate({
                     href="/services"
                     className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/20"
                   >
-                    View All Services
+                    View Services
                   </Link>
                 </div>
               </div>
