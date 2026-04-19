@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -126,12 +127,12 @@ function ServiceCard({
         </p>
 
         <div className="mt-auto pt-7">
-          <a
+          <Link
             href={href}
             className="inline-flex items-center justify-center rounded-full border border-slate-300 px-5 py-3 font-bold text-slate-800 transition hover:border-slate-500"
           >
             View Service
-          </a>
+          </Link>
         </div>
       </div>
     </article>
@@ -140,32 +141,47 @@ function ServiceCard({
 
 export default function ServicesPage() {
   return (
-        <main className="min-h-screen bg-[#edf3f3]">
+    <main className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
-          <a
+          <Link
             href="/"
             className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]"
           >
             MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
-            <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            <Link
+              href="/services"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Services
-            </a>
-            <a href="/#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#locations"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Locations
-            </a>
-            <a href="/#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#about"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               About
-            </a>
-            <a href="/#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#faq"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               FAQ
-            </a>
-            <a href="/#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
+            </Link>
+            <Link
+              href="/#contact"
+              className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+            >
               Contact
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-5">
@@ -184,6 +200,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
       <section className="relative overflow-hidden">
         <div className="relative min-h-[520px]">
           <Image
@@ -210,12 +227,66 @@ export default function ServicesPage() {
                 squalor, property recovery, decluttering and crisis navigation,
                 based in Mackay and available where needed.
               </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="tel:0405450705"
+                  className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
+                >
+                  Call the Response Line
+                </a>
+
+                <Link
+                  href="/#contact"
+                  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
+                >
+                  Request a Quote
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+      <section className="mx-auto max-w-[1400px] px-6 py-10 lg:px-10">
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            Back to Home
+          </Link>
+          <Link
+            href="/#about"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            About
+          </Link>
+          <Link
+            href="/#locations"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            Locations
+          </Link>
+          <Link
+            href="/#faq"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/#contact"
+            className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-800 transition hover:border-slate-500"
+          >
+            Contact
+          </Link>
+        </div>
+      </section>
+
+      <section
+        id="specialist-services"
+        className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10"
+      >
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Specialist Remediation Services
@@ -223,6 +294,10 @@ export default function ServicesPage() {
           <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
             High-sensitivity property support
           </h2>
+          <p className="mt-5 max-w-3xl text-[1.08rem] leading-8 text-slate-600">
+            Service lines for contaminated, traumatic and difficult property
+            situations requiring a more controlled response.
+          </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -232,7 +307,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 pb-20 lg:px-10">
+      <section
+        id="support-services"
+        className="mx-auto max-w-[1400px] px-6 pb-20 lg:px-10"
+      >
         <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Additional Support
@@ -240,6 +318,10 @@ export default function ServicesPage() {
           <h2 className="mt-3 text-[2.4rem] font-black uppercase leading-[0.95] tracking-tight text-slate-900 sm:text-[3.2rem]">
             Practical support services
           </h2>
+          <p className="mt-5 max-w-3xl text-[1.08rem] leading-8 text-slate-600">
+            Support options for situations that need structure, guidance or
+            hands-on help without full remediation.
+          </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -249,7 +331,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-[1400px] px-6 pb-20 lg:px-10">
+      <section
+        id="contact"
+        className="mx-auto max-w-[1400px] px-6 pb-20 lg:px-10"
+      >
         <div className="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-[0_18px_44px_rgba(23,49,88,0.08)] lg:p-12">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
             Request a Fast Quote
@@ -263,13 +348,20 @@ export default function ServicesPage() {
             clarified quickly.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="tel:0405450705"
               className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
             >
               Call 0405 450 705
             </a>
+
+            <Link
+              href="/#contact"
+              className="rounded-full border border-slate-300 bg-white px-7 py-4 font-bold text-slate-800 transition hover:border-slate-500"
+            >
+              Use Homepage Enquiry Form
+            </Link>
           </div>
         </div>
       </section>
