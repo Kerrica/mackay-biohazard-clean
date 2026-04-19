@@ -257,10 +257,20 @@ function FaqItem({
     </article>
   );
 }
-
-export default function Home() {
+function BackToTopLink() {
   return (
-    <main className="min-h-screen bg-[#edf3f3]">
+    <div className="mt-8 flex justify-end">
+      <a
+        href="#top"
+        className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold uppercase tracking-[0.14em] text-slate-700 transition hover:border-slate-500 hover:text-[#2d99b3]"
+      >
+        Back to Top
+      </a>
+    </div>
+  );
+}export default function Home() {
+  return (
+   <main id="top" className="min-h-screen bg-[#edf3f3]">
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
           <div className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]">
@@ -408,7 +418,8 @@ export default function Home() {
         ))}
       </div>
     </div>
-  </div>
+  </div> 
+       <BackToTopLink />
 </section>
 <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
   <div className="mb-10">
@@ -487,6 +498,7 @@ export default function Home() {
       ))}
     </div>
   </div>
+  <BackToTopLink />
 </section>   
 
     
