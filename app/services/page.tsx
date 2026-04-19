@@ -38,7 +38,7 @@ const specialistServices = [
       "Structured cleanup, sorting, clearing and property recovery for severe clutter, squalor and difficult living environments.",
     href: "/services/hoard-squalor-recovery",
     image: "/hoarded-room-mackay-before.jpg",
-    alt: "Severe hoarded room before cleanup in Mackay",
+    alt: "Hoarded room before recovery work",
   },
   {
     title: "Unattended Death & Biohazard Cleaning",
@@ -46,7 +46,7 @@ const specialistServices = [
       "Discrete response for contamination, odour concerns and high-sensitivity environments requiring controlled remediation.",
     href: "/services/unattended-death-biohazard-cleaning",
     image: "/biohazard-cleaning-mackay-on-site-team.jpg",
-    alt: "Biohazard cleanup in progress in Mackay property",
+    alt: "Biohazard remediation team working on site",
   },
   {
     title: "Trauma & Crime Scene Cleaning",
@@ -54,7 +54,7 @@ const specialistServices = [
       "Calm, practical cleanup after traumatic events, with clear communication from first contact through to handover.",
     href: "/services/trauma-crime-scene-cleaning",
     image: "/trauma-cleaning-mackay-ppe-doorway.jpg",
-    alt: "Technician in PPE at Mackay property doorway",
+    alt: "Technician in PPE at property entrance",
   },
   {
     title: "Vacate & Property Recovery",
@@ -62,7 +62,7 @@ const specialistServices = [
       "Fast, practical reset support for families, landlords, agents and time-sensitive property handovers.",
     href: "/services/vacate-property-recovery",
     image: "/bedroom-cleaning-mackay-after.jpg",
-    alt: "Recovered bedroom after cleanup in Mackay",
+    alt: "Bedroom after property recovery work",
   },
   {
     title: "Meth Lab Clean Up",
@@ -81,7 +81,7 @@ const supportServices = [
       "Hands-on support to clear, sort and reset rooms, storage areas and homes that have become difficult to manage.",
     href: "/services/decluttering",
     image: "/storage-declutter-mackay-before.jpg",
-    alt: "Storage area before decluttering in Mackay",
+    alt: "Storage area before decluttering",
   },
   {
     title: "Crisis Navigation",
@@ -89,7 +89,7 @@ const supportServices = [
       "A clear starting point when the situation feels too complex to manage alone, with guidance and practical next steps.",
     href: "/services/crisis-navigation",
     image: "/crisis-navigation-mackay.jpg",
-    alt: "Supportive in-home guidance conversation",
+    alt: "In-home support conversation",
   },
 ];
 
@@ -220,7 +220,7 @@ export default function ServicesPage() {
               href="tel:0405450705"
               className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
             >
-              Call Now
+              Call 0405 450 705
             </a>
           </div>
         </div>
@@ -258,14 +258,14 @@ export default function ServicesPage() {
                   href="tel:0405450705"
                   className="rounded-full bg-[#ef4f45] px-7 py-4 font-bold text-white transition hover:bg-[#db4339]"
                 >
-                  Call the Response Line
+                  Call 0405 450 705
                 </a>
 
                 <Link
                   href="#service-groups"
                   className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
                 >
-                  View Service Types
+                  View Services
                 </Link>
               </div>
             </div>
@@ -316,7 +316,7 @@ export default function ServicesPage() {
               href="/#contact"
               className="rounded-full border border-slate-300 bg-white px-6 py-3 font-bold text-slate-800 transition hover:border-slate-500"
             >
-              Use Homepage Enquiry Form
+              Request a Quote
             </Link>
             <a
               href="tel:0405450705"
