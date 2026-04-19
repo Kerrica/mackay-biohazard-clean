@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Meth Lab Decontamination & Clean Up Mackay",
+  description:
+    "Controlled support in Mackay for suspected or confirmed meth-affected properties requiring specialist assessment, decontamination planning and practical next steps.",
+  alternates: {
+    canonical: "/services/meth-lab-clean-up",
+  },
+  openGraph: {
+    title: "Meth Lab Decontamination & Clean Up Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Controlled support in Mackay for suspected or confirmed meth-affected properties requiring specialist assessment, decontamination planning and practical next steps.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/meth-lab-clean-up",
+    images: [
+      {
+        url: "/biohazard-cleaning-mackay-on-site-team.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Meth lab decontamination and clean up in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Meth Lab Decontamination & Clean Up Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Controlled support in Mackay for suspected or confirmed meth-affected properties requiring specialist assessment, decontamination planning and practical next steps.",
+    images: ["/biohazard-cleaning-mackay-on-site-team.jpg"],
+  },
+};
 
 export default function MethLabCleanUpPage() {
   return (
