@@ -1,4 +1,34 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Trauma & Crime Scene Cleaning Mackay",
+  description:
+    "Calm, practical trauma and crime scene cleaning in Mackay, with controlled remediation, clear next steps and discreet support after traumatic events.",
+  alternates: {
+    canonical: "/services/trauma-crime-scene-cleaning",
+  },
+  openGraph: {
+    title: "Trauma & Crime Scene Cleaning Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Calm, practical trauma and crime scene cleaning in Mackay, with controlled remediation, clear next steps and discreet support after traumatic events.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/trauma-crime-scene-cleaning",
+    images: [
+      {
+        url: "/trauma-cleaning-mackay-ppe-doorway.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Trauma and crime scene cleaning in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title: "Trauma & Crime Scene Cleaning Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Calm, practical trauma and crime scene cleaning in Mackay, with controlled remediation, clear next steps and discreet support after traumatic events.",
+    images: ["/trauma-cleaning-mackay-ppe-doorway.jpg"],
+  },
+};
 
 export default function TraumaCrimeSceneCleaningPage() {
   return (
