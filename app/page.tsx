@@ -437,8 +437,7 @@ export default function Home() {
       </div>
     </div>
   </div> 
-       <BackToTopLink />
-</section>
+       </section>
 <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
   <div className="mb-10">
     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#2d99b3]">
@@ -516,8 +515,7 @@ export default function Home() {
       ))}
     </div>
   </div>
-  <BackToTopLink />
-</section>   
+  </section>   
 
     
       <section id="about" className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
