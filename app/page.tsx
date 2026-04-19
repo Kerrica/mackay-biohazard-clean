@@ -290,52 +290,71 @@ function FaqItem({
 export default function Home() {
   return (
    <main id="top" className="min-h-screen bg-[#edf3f3]">
-      <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-10">
-          <div className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]">
-            MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
-          </div>
+    <section className="border-b border-slate-200 bg-white">
+  <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-8 px-6 py-5 lg:px-10">
+    <div className="text-[20px] font-black uppercase tracking-tight text-slate-900 sm:text-[24px]">
+      MACKAY <span className="text-[#2d99b3]">BIOHAZARD</span> CLEANING
+    </div>
 
-          <nav className="hidden items-center gap-10 md:flex">
-          <a
-  href="/services"
-  className="rounded-full border border-white/50 bg-white/10 px-7 py-4 font-bold text-white transition hover:bg-white/20"
->
-  View Services
-</a>
-            <a href="/services" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-            Services
-            </a>
-            <a href="#locations" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-              Locations
-            </a>
-            <a href="#about" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-              About
-            </a>
-            <a href="#faq" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-              FAQ
-            </a>
-            <a href="#contact" className="font-bold text-slate-900 transition hover:text-[#2d99b3]">
-              Contact
-            </a>
-          </nav>
+    <div className="hidden flex-1 items-center justify-end gap-10 md:flex">
+      <nav className="flex items-center gap-10">
+        <a
+          href="/services"
+          className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+        >
+          Services
+        </a>
+        <a
+          href="#locations"
+          className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+        >
+          Locations
+        </a>
+        <a
+          href="#about"
+          className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+        >
+          About
+        </a>
+        <a
+          href="#faq"
+          className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+        >
+          FAQ
+        </a>
+        <a
+          href="#contact"
+          className="font-bold text-slate-900 transition hover:text-[#2d99b3]"
+        >
+          Contact
+        </a>
+      </nav>
 
-          <div className="flex items-center gap-5">
-            <a
-              href="tel:0405450705"
-              className="hidden text-[18px] font-bold text-slate-700 lg:block"
-            >
-              0405 450 705
-            </a>
-            <a
-              href="tel:0405450705"
-              className="rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
-            >
-              Call 0405 450 705
-            </a>
-          </div>
-        </div>
-      </section>
+      <a
+        href="tel:0405450705"
+        className="whitespace-nowrap text-[18px] font-bold text-slate-700"
+      >
+        0405 450 705
+      </a>
+
+      <a
+        href="tel:0405450705"
+        className="whitespace-nowrap rounded-full bg-[#ef4f45] px-6 py-3 font-bold text-white transition hover:bg-[#db4339]"
+      >
+        Call 0405 450 705
+      </a>
+    </div>
+
+    <div className="md:hidden">
+      <a
+        href="tel:0405450705"
+        className="whitespace-nowrap rounded-full bg-[#ef4f45] px-5 py-3 font-bold text-white transition hover:bg-[#db4339]"
+      >
+        Call Now
+      </a>
+    </div>
+  </div>
+</section> 
 
       <section className="pb-14 pt-0">
         <div className="w-full overflow-hidden bg-[#0f2230]">
