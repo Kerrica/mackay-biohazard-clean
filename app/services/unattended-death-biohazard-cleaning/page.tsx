@@ -1,4 +1,36 @@
+import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+
+export const metadata: Metadata = {
+  title: "Unattended Death & Biohazard Cleaning Mackay",
+  description:
+    "Discrete, controlled unattended death and biohazard cleaning in Mackay for contaminated, high-sensitivity property environments requiring safe remediation and clear next steps.",
+  alternates: {
+    canonical: "/services/unattended-death-biohazard-cleaning",
+  },
+  openGraph: {
+    title:
+      "Unattended Death & Biohazard Cleaning Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Discrete, controlled unattended death and biohazard cleaning in Mackay for contaminated, high-sensitivity property environments requiring safe remediation and clear next steps.",
+    url: "https://www.mackaybiohazardcleaning.com.au/services/unattended-death-biohazard-cleaning",
+    images: [
+      {
+        url: "/biohazard-cleaning-mackay-on-site-team.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Unattended death and biohazard cleaning in Mackay",
+      },
+    ],
+  },
+  twitter: {
+    title:
+      "Unattended Death & Biohazard Cleaning Mackay | Mackay Biohazard Cleaning",
+    description:
+      "Discrete, controlled unattended death and biohazard cleaning in Mackay for contaminated, high-sensitivity property environments requiring safe remediation and clear next steps.",
+    images: ["/biohazard-cleaning-mackay-on-site-team.jpg"],
+  },
+};
 
 export default function UnattendedDeathBiohazardCleaningPage() {
   return (
